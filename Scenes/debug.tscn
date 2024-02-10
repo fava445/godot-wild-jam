@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5n685hg2ws3v"]
+[gd_scene load_steps=4 format=3 uid="uid://b5n685hg2ws3v"]
 
 [ext_resource type="PackedScene" uid="uid://dguto3ucwk1rd" path="res://Characters/Player/player.tscn" id="1_7tnnl"]
 [ext_resource type="PackedScene" uid="uid://cnoahaoiwguji" path="res://Objects/Button1/Button1.tscn" id="2_1j46q"]
+[ext_resource type="PackedScene" uid="uid://bxomvrprndgaq" path="res://Objects/Door/Door.tscn" id="3_xickd"]
 
 [node name="Debug" type="Node2D"]
 
@@ -10,3 +11,6 @@ position = Vector2(610, 328)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_1j46q")]
 position = Vector2(275, 203)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("3_xickd")]
+position = Vector2(835, 209)
