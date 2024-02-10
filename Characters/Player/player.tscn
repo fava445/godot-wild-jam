@@ -7,6 +7,7 @@
 size = Vector2(129, 127)
 
 [node name="Player" type="CharacterBody2D"]
+top_level = true
 script = ExtResource("1_pw7ub")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnoahaoiwguji"]
+
+[ext_resource type="Script" path="res://Objects/Button1/ButtonCode.gd" id="1_fb2dv"]
+[ext_resource type="Texture2D" uid="uid://gh0g5ej1oaxi" path="res://Objects/Button1/PlaceholderButton.jpg" id="1_ux818"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4708"]
+size = Vector2(195, 180)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_fb2dv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-20, -15)
+scale = Vector2(0.0778, 0.072)
+texture = ExtResource("1_ux818")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-21, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_q4708")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
