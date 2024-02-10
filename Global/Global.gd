@@ -1,2 +1,2 @@
 extends Node
-var ButtonPressed
+var ButtonPressed = false
